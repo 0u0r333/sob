@@ -1,0 +1,23 @@
+
+
+.texthidden{
+    position: absolute;
+    Top:0; left:0;
+    Display:none;
+    Font-size:0rem;
+    Width:0; height:0;
+}
+
+.topbutton{
+	width: 40px;
+	height: 40px;
+	position: sticky;
+	bottom: 5.2%;
+    left : 94.8%;
+	background-color: #DAE8CA;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 998;
+}
