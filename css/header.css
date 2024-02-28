@@ -1,0 +1,100 @@
+
+
+body{color:#333; font-family: "Noto Sans KR", sans-serif;}
+
+
+header{
+    width: 6.77%;
+    min-width: 100px;
+    height: 200px;
+    font-family: 'neurimboGothicRegular';
+    position: fixed;
+    top: 5.2%;
+    left:2.6%;
+    z-index: 999;
+}
+
+header nav{
+    margin-top: 20px;
+    color:#141466;
+}
+
+header nav ul li{
+    margin-bottom: 8px;
+    letter-spacing: 3px;
+    line-height: 100%;
+}
+header nav ul li a{
+    display: block;
+}
+
+header nav ul li:hover{
+    background-color: #FFE0DE;
+}
+
+header .m_logo{
+    display: none;
+}
+header .m_menu{
+    display: none;
+}
+
+
+
+/* (해상도 ~ 400px)*/ 
+@media all and (max-width:767px) {
+    header{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        position: fixed;
+        top: 40px;
+        left:0%;
+        z-index: 999;
+        justify-content: space-between;
+        padding : 0 20px;
+    }
+
+    header .og_logo {
+        display: none;
+    }
+
+    header .m_menu{
+        display: block;
+    }
+    
+    header .m_logo {
+        display: block;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+
+    }
+    header nav{
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    header nav ul{
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 15px;
+    }
+
+
+    header nav ul li{
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        line-height: 100%;
+    }
+
+   
+
+
+}
+
+
+
