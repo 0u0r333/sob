@@ -1,0 +1,431 @@
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+@import "common.css";
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+main h2{
+    font-family: 'neurimboGothicRegular';
+    color:#141466;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+main .cartbox{
+    width: 768px;
+    margin-bottom: 100px;
+}
+main .detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+main .detail .left{
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+main .detail .left input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+main .detail .right{
+    width: calc(100% - 260px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .detail .right .name p{
+    font-size: 1.16rem;
+    font-weight: 800;
+    line-height: 200%;
+}
+main .detail .right .control .c_box{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.16rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+main .detail .right .control .c_box .post{
+    margin-right: 30px;
+}
+
+main .detail .right .control .qty{
+    margin-bottom: 20px;
+}
+main .detail .right .control .price .krw{
+    margin-right: 10px;
+}
+
+
+main .detail .right .price .price_display{
+    margin-left: 10px;
+}
+main .detail .right .d_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+main .detail .right .d_btn input[type="button"]{
+    border: none;
+    background: none;
+    font-size: 1.16rem;
+    font-weight: 800;
+    padding:0;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+main .totalbox{
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 120px;
+}
+
+main .totalbox h4{
+    font-size: 1.16rem;
+    font-weight: 800;
+    margin-right: 50px;
+}
+
+main .totalbox .t_con{
+    width: 100%;
+    font-size: 1.16rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main .totalbox .t_con .c_box{
+    display: flex;
+    font-size: 1.16rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+main .totalbox .t_con .c_box .post{
+    margin-right: 50px;
+}
+main .totalbox .t_con .product .post{
+    margin-right: 70px;
+}
+main .totalbox .t_con .total .post{
+    margin-right: 85px;
+}
+
+main .totalbox .t_con .total p{
+    font-weight: 800;
+}
+
+main .totalbox .t_con .c_box .price{
+    display: flex;
+}
+main .totalbox .t_con .c_box .price p:first-child{
+    margin-right: 10px;
+}
+
+main .totalbox .order_btn{
+    display: flex;
+    flex-direction: column;
+}
+main .totalbox .order_btn input[type="button"]{
+    border: none;
+    background: none;
+    font-size: 1.16rem;
+    font-weight: 800;
+    width: 150px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+main .totalbox .order_btn input[type="button"]:last-child{
+    background-color: #FFF6DE;
+    border-radius: 100%;
+}
+main .totalbox .order_btn input[type="button"]:hover{
+    border:1px solid #ff0000;
+    border-radius: 100%;
+}
+
+
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1200px)*/ 
+@media all and (min-width:1024px) and (max-width:1200px) { 
+    main .cartbox{
+        width: 700px;
+        margin-bottom: 100px;
+    }
+    main .detail .right .name p{
+        font-size: 1rem;
+        font-weight: 800;
+        line-height: 200%;
+    }
+   
+    main .detail .right .d_btn input[type="button"]{
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 800;
+        padding:0;
+        margin-bottom: 20px;
+    }
+    main .detail .right .control .c_box{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    main .detail .right .d_btn input[type="button"]{
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 800;
+        padding:0;
+        margin-bottom: 15px;
+    }
+    main .totalbox{
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 150px;
+    }
+    main .totalbox h4{
+        font-size: 1rem;
+        font-weight: 800;
+        margin-right: 50px;
+    }
+    main .totalbox .t_con{
+        width: 100%;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    main .totalbox .t_con .c_box{
+        display: flex;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    main .totalbox .order_btn input[type="button"]{
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 800;
+        width: 150px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+} 
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+    main .cartbox{
+        width: 650px;
+        margin-bottom: 100px;
+    }
+    main .detail .left{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+    }
+    main .detail .right{
+        width: calc(100% - 200px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main .totalbox{
+        width: 650px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 100px;
+    }
+} 
+
+/* 모바일 가로, 테블릿 세로 (해상도 400px ~ 767px)*/ 
+@media all and (min-width:400px) and (max-width:767px) {
+    main .cartbox{
+        width: 380px;
+        margin-bottom: 100px;
+    }
+    main .detail .left{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+        margin-left: 40px;
+    }
+    main .detail .right{
+        width: calc(100% - 150px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    main .detail .right .name p{
+        font-size: 1rem;
+        font-weight: 800;
+        line-height: 160%;
+        margin-bottom: 20px;
+    }
+    main .detail .right .control .c_box{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    main .detail .right .d_btn{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    main .detail .right .d_btn input[type="button"]{
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 800;
+        padding:0;
+        margin-bottom: 0px;
+        margin-right: 20px;
+    }
+
+    main .totalbox{
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 40px;
+    }
+
+    main .totalbox h4{
+        font-size: 1rem;
+        font-weight: 800;
+        margin-bottom: 50px;
+        align-self: start;
+    }
+    main .totalbox .t_con{
+        width: 100%;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    main .totalbox .t_con .c_box input[type="text"]{
+        border: none;
+        width: 50px;
+    }
+    main .totalbox .order_btn{
+        display: flex;
+        flex-direction: column;
+        align-self: end;
+    }
+    main .totalbox .order_btn input[type="button"]{
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 800;
+        width: 150px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+}
+
+/* 모바일 세로 (해상도 ~ 400px)*/ 
+@media all and (max-width:400px) {
+    main .cartbox{
+        width: 290px;
+        margin-bottom: 100px;
+    }
+    main .detail .left{
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+    main .detail .right{
+        width: calc(100% - 100px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    main .detail .right .name p{
+        font-size: 1rem;
+        font-weight: 800;
+        line-height: 160%;
+        margin-bottom: 20px;
+    }
+    main .detail .right .control .c_box{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    main .detail .right .d_btn{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    main .detail .right .d_btn input[type="button"]{
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 800;
+        padding:0;
+        margin-bottom: 0px;
+        margin-right: 20px;
+    }
+
+    main .totalbox{
+        width: 290px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 40px;
+    }
+
+    main .totalbox h4{
+        font-size: 1.16rem;
+        font-weight: 800;
+        margin-bottom: 50px;
+        align-self: start;
+    }
+    main .totalbox .t_con{
+        width: 100%;
+        font-size: 1.16rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    main .totalbox .t_con .c_box input[type="text"]{
+        border: none;
+        width: 50px;
+    }
+    main .totalbox .order_btn{
+        display: flex;
+        flex-direction: column;
+        align-self: end;
+    }
+}
