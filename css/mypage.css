@@ -1,0 +1,323 @@
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+@import "common.css";
+
+
+main{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    font-family: 'neurimboGothicRegular';
+    font-size: 1.2rem;
+    color:#848484;
+}
+
+main .bg{
+    width: 714px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+main .login{
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+    width: 714px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .login .top{
+    display: flex;
+    flex-direction: column;
+}
+
+main .login .top .id{
+    margin-bottom: 20px;
+}
+
+main .login .top .id label{
+    letter-spacing: 8px;
+}
+main .login .top .pw label{
+    letter-spacing: 3px;
+}
+
+main .login .line{
+    background:none;
+    border: none;
+    border-bottom: 1px solid #848484;
+    width: 300px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+main .login .btn{
+    width: 215px;
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .btn .logbutton{
+    font-family: 'neurimboGothicRegular';
+    font-size: 1.2rem;
+    border: none;
+    background : none;
+    color:#333;
+}
+
+main .logbutton:hover{
+    border: 1px solid #ff0000;
+    border-radius: 100%;
+}
+
+main .forgot{
+    width: 714px;
+    height: 50px;
+    position: absolute;
+    bottom: 0%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+main .forgot .logbutton{
+    width: 120px;
+    font-family: 'neurimboGothicRegular';
+    font-size: 1.2rem;
+    border: none;
+    background : none;
+    color:#848484;
+    margin-bottom: 12px;
+    margin-left: 564px;
+}
+main .forgot .logbutton:hover{
+    border: 1px solid #ff0000;
+    border-radius: 100%;
+}
+
+
+
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+    main{
+        width: 100%;
+        height: 500px;
+        position: relative;
+        font-family: 'neurimboGothicRegular';
+        font-size: 1rem;
+        color:#848484;
+    }
+    main .bg{
+        width: 580px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    main .login{
+        position: absolute;
+        top: 56%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    
+        width: 580px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .btn .logbutton{
+        font-family: 'neurimboGothicRegular';
+        font-size: 1rem;
+        border: none;
+        background : none;
+    }
+    main .forgot{
+        width: 580px;
+        height: 50px;
+        position: absolute;
+        bottom: 0%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+    }
+    main .forgot .logbutton{
+        width: 120px;
+        font-family: 'neurimboGothicRegular';
+        font-size: 1rem;
+        border: none;
+        background : none;
+        color:#848484;
+        margin-bottom: 12px;
+        margin-left: 430px;
+    }
+} 
+
+/* 모바일 가로, 테블릿 세로 (해상도 400px ~ 767px)*/ 
+@media all and (min-width:400px) and (max-width:767px) {
+    main{
+        width: 100%;
+        height: 500px;
+        position: relative;
+        font-family: 'neurimboGothicRegular';
+        font-size: 0.9rem;
+        color:#848484;
+    }
+    main .bg{
+        width: 380px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    main .login{
+        position: absolute;
+        top: 56%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    
+        width: 380px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .login .top{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+    main .login .line{
+        background:none;
+        border: none;
+        border-bottom: 1px solid #848484;
+        width: 200px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    main .login .top .id{
+        margin-bottom: 10px;
+    }
+    main .btn .logbutton{
+        font-family: 'neurimboGothicRegular';
+        font-size: 0.9rem;
+        border: none;
+        background : none;
+    }
+    main .forgot{
+        width: 380px;
+        height: 50px;
+        position: absolute;
+        bottom: 0%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+    main .forgot .logbutton{
+        width: 120px;
+        font-family: 'neurimboGothicRegular';
+        font-size: 0.9rem;
+        border: none;
+        background : none;
+        color:#848484;
+        margin-bottom: 12px;
+        margin-left: 230px;
+    }
+} 
+
+/* 모바일 세로 (해상도 ~ 400px)*/ 
+@media all and (max-width:400px) {
+    main{
+        width: 100%;
+        height: 500px;
+        position: relative;
+        font-family: 'neurimboGothicRegular';
+        font-size: 0.8rem;
+        color:#848484;
+    }
+    main .bg{
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    main .login{
+        position: absolute;
+        top: 56%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    
+        width: 300px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .login .top{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+    main .login .line{
+        background:none;
+        border: none;
+        border-bottom: 1px solid #848484;
+        width: 200px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    main .login .top .id{
+        margin-bottom: 10px;
+    }
+    main .btn .logbutton{
+        font-family: 'neurimboGothicRegular';
+        font-size: 0.8rem;
+        border: none;
+        background : none;
+    }
+    main .forgot{
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        bottom: 0%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+    }
+    main .forgot .logbutton{
+        width: 110px;
+        font-family: 'neurimboGothicRegular';
+        font-size: 0.8rem;
+        border: none;
+        background : none;
+        color:#848484;
+        margin-bottom: 12px;
+        margin-left: 150px;
+    }
+}
